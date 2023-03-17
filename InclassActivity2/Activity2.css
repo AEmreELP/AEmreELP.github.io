@@ -7,6 +7,30 @@ body
 	margin: 0 auto;
 }
 
+caption{
+    font-size: 200%;
+    font-weight: bolder;
+    margin: 2%;
+}
+
+#captions{
+    vertical-align: top;
+    border: 1px solid black;
+    font-weight: bold;
+    background-color: white;
+
+}
+.lastRow{
+    border: 1px solid black;
+    font-weight: bold;
+    text-align: right;
+}
+
+.right{
+    text-align: right;
+
+}
+
 table 
 {
 	border-collapse: collapse;
