@@ -1,0 +1,57 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navigationbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background: rgb(1, 1, 150);
+    color: #fff;
+}
+
+.navigationbar img {
+    width: 70px;
+    float: left;
+}
+
+.navigationbar p {
+    font-size: xx-large;
+    padding-left: 30%;
+    padding-bottom: -10%;
+    font-weight: 600;
+}
+
+.navigationbar-logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigationbar h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.navigationbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navigationbar li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: .2s;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+
+.navigationbar li a:hover {
+    background: lightgreen;
+}
