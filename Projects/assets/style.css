@@ -1,9 +1,15 @@
+/*
+Student : Abdulkadir Emre ELP
+Lecturer : Fadi YILMAZ
+Lesson : CENG311
+
+*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/*Home Page general template*/
 #title {
     text-align: center;
     background-color: rgb(10, 100, 180);
@@ -74,7 +80,7 @@
     max-height: 10%;
 
 }
-
+/*To locate picture left and right*/
 .content h2 img {
     width: 35%;
     padding-bottom: 3%;
@@ -100,7 +106,7 @@
     
 }
 
-
+/*To see contact information for pages*/
 .footer {
     width: 100%;
     background-color: darkblue;
@@ -131,6 +137,7 @@
 }
 .social a img{
     width: 15%;
+    border-radius: 30%;
 
 }
 .footnav{
@@ -141,7 +148,7 @@
 
 .footnav li{
 
-    width: 25%;
+    width: 20%;
     float: left;
     vertical-align: top;
     margin: 0%;
@@ -157,4 +164,30 @@
     padding: 5%;
     padding-top: 15%;
     background-color: rgb(1, 1, 80);
+}
+/*I didn't learned this part yet 
+  This part will be for contact page
+*/
+.form{
+    justify-content: center;
+}
+/*This part for Activities page*/
+.content table{
+    width: 100%;
+	border-collapse: collapse;
+	border: 1px solid black;
+	margin: 20px;
+
+}
+
+.content th, td 
+{
+	border: 1px solid black;
+	padding: .2em 1em .2em .5em;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.content img{
+    width: 160px;
 }
