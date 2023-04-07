@@ -18,7 +18,6 @@
         $zipcode = $_POST['zipcode'];
         $email = $_POST['mail'];
         $sex = $_POST['sex'];
-        $language = $_POST['language'];
         $about = $_POST['About'];
 
         if (empty($firstname) == true) {
@@ -71,7 +70,7 @@
         else{
             echo $sex."<br/>";
         }
-        if (empty($language) == true) {
+        if (empty($_POST['language']) == true) {
             echo "Not Provided"."<br/>";
         }
         else{
