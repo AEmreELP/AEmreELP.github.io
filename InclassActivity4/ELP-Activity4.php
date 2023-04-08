@@ -38,6 +38,7 @@
             <tr>
                 <td>Country :</td>
                 <td><select name="country">
+                        <option value="America">Not Provided</option>
                         <option value="America">America</option>
                         <option value="Germany">Germany</option>
                         <option value="Spain">Spain</option>
