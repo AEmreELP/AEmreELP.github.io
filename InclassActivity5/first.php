@@ -66,12 +66,12 @@
 
     //We can change money value in here
     $rates = array(
-        "USDCAD" => 1.25,
-        "USDEUR" => 0.83,
-        "CADEUR" => 0.66,
-        "CADUSD" => 0.8,
-        "EURUSD" => 1.21,
-        "EURCAD" => 1.52,
+        "USDCAD" => 1.36,
+        "USDEUR" => 0.91,
+        "CADEUR" => 0.68,
+        "CADUSD" => 0.74,
+        "EURUSD" => 1.10,
+        "EURCAD" => 1.47,
         "USDUSD" => 1,
         "EUREUR" => 1,
         "CADCAD" => 1
