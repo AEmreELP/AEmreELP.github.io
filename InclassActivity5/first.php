@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Currency Converter</title>
 </head>
 
 <body>
+    <!-- I created table to look regular and aesthetic -->
     <form method="post">
-        <table>
+        <table style="padding: 5px;">
             <tr>
                 <td>
                     From :
@@ -22,7 +23,7 @@
                     Currency :
                 </td>
                 <td>
-                    <select name="currency">
+                    <select name="currency-from">
                         <option value="USD">US Dollar</option>
                         <option value="CAD">Canadian Dollar</option>
                         <option value="EUR">Euro</option>
@@ -34,47 +35,73 @@
                     To :
                 </td>
                 <td>
-                    <input type="number" name="to">
+                    <input type="number" name="to" readonly>
                 </td>
                 <td>
                     Currency :
                 </td>
                 <td>
-                    <select name="currency">
+                    <select name="currency-to">
                         <option value="USD">US Dollar</option>
                         <option value="CAD">Canadian Dollar</option>
                         <option value="EUR">Euro</option>
                     </select>
                 </td>
             </tr>
+            <tr>
+                <td colspan="4">
+                    <input type="submit" value="convert" style="float: right;">
+                </td>
+            </tr>
 
         </table>
     </form>
 
+
+    <!-- I created php part to get and calculate values -->
     <?php
-    // Define the exchange rates in an associative array
-    $exchange_rates = array(
-        'USD-CAD' => 1.25,
-        'USD-EUR' => 0.85,
-        'CAD-USD' => 0.80,
-        'CAD-EUR' => 0.68,
-        'EUR-USD' => 1.18,
-        'EUR-CAD' => 1.47,
+    $amount = $_POST['from'];
+    $from = $_POST['currency-from'];
+    $to = $_POST['currency-to'];
+
+    //We can change money value in here
+    $rates = array(
+        "USDCAD" => 1.25,
+        "USDEUR" => 0.83,
+        "CADEUR" => 0.66,
+        "CADUSD" => 0.8,
+        "EURUSD" => 1.21,
+        "EURCAD" => 1.52,
+        "USDUSD" => 1,
+        "EUREUR" => 1,
+        "CADCAD" => 1
     );
 
-    // Check if the input values are valid
-    if (!is_numeric($amount)) {
-        $error_message = 'Please enter a valid amount';
-    } elseif (!array_key_exists("$from_currency-$to_currency", $exchange_rates)) {
-        $error_message = 'Unsupported currency conversion';
-    } else {
-        // Calculate the exchange rate
-        $exchange_rate = $exchange_rates["$from_currency-$to_currency"];
-        $converted_amount = $amount * $exchange_rate;
-        echo "$amount&from_currency=$from_currency&to_currency=$to_currency&converted_amount=$converted_amount";
+    //I checked values and calculate the result
+    if (array_key_exists($from . $to, $rates)) {
+        $exchangeRate = $rates[$from . $to];
+        $result = $amount * $exchangeRate;
+        //To get more detailed result we can increase 2nd variable of number_format function 
+        echo '<script>document.getElementsByName("currency-from")[0].value = "' . $from . '";</script>';
+        echo '<script>document.getElementsByName("currency-to")[0].value = "' . $to . '";</script>';
+        echo '<script>document.getElementsByName("from")[0].value = "' . number_format($amount, 2) . '";</script>';
+        echo '<script>document.getElementsByName("to")[0].value = "' . number_format($result, 2) . '";</script>';
+        
+        //I give the exchange rate to currencies
+        echo "<p>Exchange rate: 1 $from = $exchangeRate $to</p>";
+        
+    }
+    else{
+        echo "Something going wrong!!!";
     }
     ?>
 
 </body>
 
 </html>
+
+
+
+
+
+
