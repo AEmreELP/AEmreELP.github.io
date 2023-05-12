@@ -9,32 +9,47 @@ window.onload = function () {
 	$("display_results").onclick = displayResults;
 	$("display_scores").onclick = displayScores;
 	$("add").onclick = addScore;
-	
-	
+
+
 };
 
-function displayResults()
-{
+function displayResults() {
 	var average = 0;
-	for(var i=0;i<scores.length;i++)
-	{
-		average= (average*(i)+scores[i])/(i+1);
+	for (var i = 0; i < scores.length; i++) {
+		average = (average * (i) + scores[i]) / (i + 1);
 	}
 
-	var highest=Math.max(...scores);
-	var index =scores.indexOf(highest);
-	
-	document.getElementById("results").innerHTML=
-	document.getElementById("results").innerHTML="<h2> Results </h2><br /> Average score is "+average + "<br \> "+"High score = "+names[index] +" with a score of "+scores[index]
+	var highest = Math.max(...scores);
+	var index = scores.indexOf(highest);
+
+	document.getElementById("results").innerHTML =
+		document.getElementById("results").innerHTML = "<h2> Results </h2><br /> Average score is " + average + "<br \> " + "High score = " + names[index] + " with a score of " + scores[index]
 }
 
-function displayScores(){
-	var html='';
+function displayScores() {
+	//var html='<tr>'+'<th>'+'Name'+'</th>'+'<th>'+'Score'+'</th>'+'</tr>';
+	var html = '<tr>' + '<td>' + '<b>Name</b>' + '</td>' + '<td>' + '<b>Score</b>' + '</td>' + '</tr>'
 	for (let i = 0; i < names.length; i++) {
-		html+='<tr>'+names[i]+'</tr>'+' \t'+'<tr>'+scores[i]+'</tr> <br />'
-		
+		html += '<tr>' + '<td>' + names[i] + '</td>' + '<td>' + scores[i] + '</td>' + '</tr>'
+
 	}
 
+	document.getElementById("scores_table").innerHTML = "<h2> Scores </h2>" + html
+}
 
-	document.getElementById("scores_table").innerHTML="<h2> Scores </h2><br />"+html
+function addScore() {
+
+	if (String(document.getElementById("name").value) == '' || (parseInt(document.getElementById("score").value) >= 100 ||
+		parseInt(document.getElementById("score").value) <= 0 || String(document.getElementById("score").value) == '')) {
+
+		alert("You must enter a name and a valid score");
+	}
+
+	else {
+
+		boxvalue = document.getElementById("name").value;
+		names.push(boxvalue);
+		boxvalue = document.getElementById("score").value;
+		scores.push(boxvalue);
+	}
 }
