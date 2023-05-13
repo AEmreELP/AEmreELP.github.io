@@ -2,3 +2,17 @@
     width:30%;
     margin: 2%;
 }
+
+table tr td input:invalid{
+
+    border: none;
+    outline: 2px solid red;
+    border-radius: 2px;
+}
+/*
+table tr td input{
+
+    border: none;
+    outline: 2px solid red;
+    border-radius: 5px;
+}

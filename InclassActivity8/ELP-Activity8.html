@@ -16,49 +16,56 @@
 </head>
 
 <body>
-    <table id="tablespecify">
-        <tr>
-            <td>
-                <label for="PLanguage">What programming language do you know?</label>
-            </td>
-            <td>
-                <input type="text" id="PLanguage" required><br>
-            </td>
-        </tr>
+    <form>
+        <table id="tablespecify">
 
-        <tr>
-            <td>
-                <label for="BDate">What is your birthday</label>
-            </td>
-            <td>
-                <input type="text" id="BDate"><br>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label for="email">Email Address</label>
-            </td>
-            <td>
-                <input type="email" id="email" required placeholder="Enter a valid email address">
-            </td>
-        </tr>
+            <tr>
+                <td>
+                    <label for="PLanguage">What programming language do you know?</label>
+                </td>
+                <td>
+                    <!-- I used autocomplete function
+                        After writing one letter other options will appear  -->
+                    <input type="text" id="PLanguage" name="PLanguage" required><br>
+                </td>
+            </tr>
 
-        <tr>
-            <td>
-                <label for="website">Website</label>
-            </td>
-            <td>
-                <input type="url" id="website" required><br>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="button" value="submit">
-            </td>
-        </tr>
+            <tr>
+                <td>
+                    <label for="BDate">What is your birthday</label>
+                </td>
+                <td>
+                    <!--we get the data from jquery-->
+                    <input type="text" id="BDate" required><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email Address</label>
+                </td>
+                <td>
+                    <!--Mail address with one @ symbol-->
+                    <input type="email" id="email" required  placeholder="Enter a valid email address">
+                </td>
+            </tr>
 
-    </table>
+            <tr>
+                <td>
+                    <label for="website">Website</label>
+                </td>
+                <td>
+                    <!--https://tryphp.w3schools.com/-->
+                    <input type="url" name="website" required pattern="https?://.+">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="submit">
+                </td>
+            </tr>
 
+        </table>
+    </form>
 </body>
 
 </html>

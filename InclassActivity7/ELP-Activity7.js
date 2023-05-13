@@ -39,7 +39,7 @@ function displayScores() {
 
 function addScore() {
 
-	if (String(document.getElementById("name").value) == '' || (parseInt(document.getElementById("score").value) >= 100 ||
+	if (String(document.getElementById("name").value) == '' || (parseInt(document.getElementById("score").value) >= 101 ||
 		parseInt(document.getElementById("score").value) <= 0 || String(document.getElementById("score").value) == '')) {
 
 		alert("You must enter a name and a valid score");
