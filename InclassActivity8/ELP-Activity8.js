@@ -1,35 +1,11 @@
+var languages = ["Html","Php","JavaScript","ActionScript","AppleScript","Asp","Lisp","Perl","Python"]
+
 $(document).ready(function () {
-	// preload images
+    $("#BDate").datepicker();
 
-	$("#image_list a").each(function () {
-		var swappedImage = new Image();
-		swappedImage.src = $(this).attr("href");
-
-	});
+    $("#PLanguage").autocomplete({
+        source:languages
+    })
 
 
-
-
-
-	// set up event handlers for links    
-	$("#image_list a").click(function (evt) {
-		
-	//	$("#image").fadeOut();
-	//	$("#caption").fadeOut();
-
-		var imageURL = $(this).attr("href");
-		$("#image").attr("src", imageURL).fadeIn(5000);
-
-		var caption = $(this).attr("title");
-		$("#caption").text(caption).fadeIn(5000);
-
-
-
-		// cancel the default action of the link
-		evt.preventDefault();
-	}); // end click
-
-
-	// move focus to first thumbnail
-	$("li:first-child a").focus();
-}); // end ready
+})
