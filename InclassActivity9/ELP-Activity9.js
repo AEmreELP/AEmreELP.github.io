@@ -14,14 +14,14 @@ $(document).ready(function () {
 	// set up event handlers for links    
 	$("#image_list a").click(function (evt) {
 		
-	//	$("#image").fadeOut();
-	//	$("#caption").fadeOut();
+		$("#image").fadeOut();
+		$("#caption").fadeOut();
 
 		var imageURL = $(this).attr("href");
-		$("#image").attr("src", imageURL).fadeIn(5000);
+		$("#image").attr("src", imageURL).fadeIn();
 
 		var caption = $(this).attr("title");
-		$("#caption").text(caption).fadeIn(5000);
+		$("#caption").text(caption).fadeIn();
 
 
 
