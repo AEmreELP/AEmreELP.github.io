@@ -18,7 +18,7 @@ function displayResults() {
 	for (var i = 0; i < scores.length; i++) {
 		average = (average * (i) + scores[i]) / (i + 1);
 	}
-
+	//I used math function to find maximum score and index of this number
 	var highest = Math.max(...scores);
 	var index = scores.indexOf(highest);
 
@@ -38,7 +38,7 @@ function displayScores() {
 }
 
 function addScore() {
-
+	//I added this condition to prevent invalid input
 	if (String(document.getElementById("name").value) == '' || (parseInt(document.getElementById("score").value) >= 101 ||
 		parseInt(document.getElementById("score").value) <= 0 || String(document.getElementById("score").value) == '')) {
 
@@ -48,8 +48,8 @@ function addScore() {
 	else {
 
 		boxvalue = document.getElementById("name").value;
-		names.push(boxvalue);
+		names.push(String(boxvalue));
 		boxvalue = document.getElementById("score").value;
-		scores.push(boxvalue);
+		scores.push(parseInt(boxvalue));
 	}
 }
