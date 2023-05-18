@@ -70,14 +70,15 @@ Lesson : CENG311
 /*Main Part*/
 
 .content {
-    background-color: aqua;
+    background: linear-gradient(#ffffff,#008ff8de);
 }
 
 /*Main Image*/
 .content h1 img {
-    background-position-x: center;
-    width: 100%;
-    max-height: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 
 }
 /*To locate picture left and right*/
@@ -164,12 +165,109 @@ Lesson : CENG311
     padding-top: 15%;
     background-color: rgb(1, 1, 80);
 }
-/*I didn't learned this part yet 
-  This part will be for contact page
+/*
+  This part  for contact page
 */
-.form{
-    justify-content: center;
+form{
+    margin: 2%;
 }
+
+#contactTable{
+    margin: 2%;
+    margin: auto;
+    justify-content: center;
+    background-color: blue;
+    width: 50%;
+}
+
+form table tr td{
+    border: none;
+}
+
+form table tr td label{
+    font-size: large;
+    width: 20%;
+    vertical-align: top;
+    margin: 2%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+form table tr td input[type="text"]{
+    width: 100%;
+    align-items: center;
+    margin: 2%;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 3%;
+    display: inline-block;
+    background-color: turquoise;
+}
+form table tr td input[type="text"]:focus{
+    background:blue;
+    transition: background 1s linear 0s;
+}
+
+form table tr td input[type="email"]{
+    width: 100%;
+    align-items: center;
+    margin: 2%;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 3%;
+    display: inline-block;
+    background-color: turquoise;
+}
+form table tr td input[type="email"]:focus{
+    background:blue;
+    transition: background 1s linear 0s;
+}
+
+
+form table tr td textarea{
+    background-color: turquoise;
+    width: 101.5%;
+    border-radius: 3%;
+}
+
+form table tr td textarea:focus{
+    background: blue 5px;
+    transition: background 1s linear 0s;
+}
+
+form table tr td input:invalid{
+    outline:solid red 3px;
+}
+
+form table tr td input:valid{
+    outline:solid green 3px;
+}
+
+form table tr td textarea:invalid{
+    outline:solid red 3px;
+}
+
+form table tr td textarea:valid{
+    outline:solid green 3px;
+}
+
+
+
+/*contact button*/
+form table tr td button{
+    width: 25%;
+    border-radius: 10%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background-color: coral;
+    float: right;
+}
+
+form table tr td button:hover{
+    background-color:chocolate;
+}
+
+
 /*This part for Activities page*/
 .content table{
     width: 100%;
@@ -190,3 +288,55 @@ Lesson : CENG311
 .content img{
     width: 160px;
 }
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }

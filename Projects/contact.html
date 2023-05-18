@@ -11,6 +11,7 @@
     <link rel="icon" href="assets/images/scuba-diving-international-logo.png">
 
 </head>
+
 <body>
 
     <div class="header">
@@ -32,25 +33,73 @@
     </div>
 
     <div class="content">
-        <form action=""></form>
-        <p>Form will add in this page</p>
+        <form action="project.php" method="post">
+            <table id="contactTable">
+                <tr>
+                    <td>
+                        <label for="Firstname" id="name">Firstname</label>
+                    </td>
+                    <td>
+                        <input type="text" name="Firstnames" id="fname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Lastname" id="Lname">Lastname</label>
+                    </td>
+                    <td>
+                        <input type="text" name="Lastnames" id="lname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="SchoolId" id="SId">School Number</label>
+                    </td>
+                    <td>
+                        <input type="text" name="SchoolIds" id="sıd" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Email" id="Mail">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" name="Emails" id="mail" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Comment" id="Comments">Comment</label>
+                    </td>
+                    <td>
+                        <textarea name="comments" id="comments" cols="30" rows="10" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" id="sendButton">Send</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
     </div>
 
     <div class="footer">
-            <ul class="social">
-                <li><a target="_blank" href="/"><img class="footer-images" src="assets/images/instagram.png"
-                            alt="Instagram"></a></li>
-                <li><a target="_blank" href="/"><img class="footer-images"
-                            src="assets/images/twitter.png" alt="Twitter"></a></li>
-                <li><a target="_blank" href="/"><img class="footer-images" src="assets/images/whatsapp.png" alt="WhatsApp"></a></li>
-            </ul>
-            <ul class="footnav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="activities.html">Activities</a></li>
-                <li><a href="member.html">Members</a></li>
-                <li><a href="routes.html">Routes</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <ul class="social">
+            <li><a target="_blank" href="/"><img class="footer-images" src="assets/images/instagram.png"
+                        alt="Instagram"></a></li>
+            <li><a target="_blank" href="/"><img class="footer-images" src="assets/images/twitter.png"
+                        alt="Twitter"></a></li>
+            <li><a target="_blank" href="/"><img class="footer-images" src="assets/images/whatsapp.png"
+                        alt="WhatsApp"></a></li>
+        </ul>
+        <ul class="footnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="member.html">Members</a></li>
+            <li><a href="routes.html">Routes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </div>
     <div class="footerCopyright">
         <p>Copyright &copy; All Right Reserved From AEE</p>
