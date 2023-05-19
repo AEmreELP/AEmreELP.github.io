@@ -9,6 +9,9 @@
     <!--This 2 column is show site title and icon-->
     <title>AYBU Diving Club</title>
     <link rel="icon" href="assets/images/scuba-diving-international-logo.png">
+    <script src="jQuery.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="Project.js"></script>
 
 </head>
 
@@ -33,8 +36,59 @@
     </div>
 
     <div class="content">
-        <form action="project.php" method="post">
+        <button id="CommentButton">Comment</button>
+        <button id="JoinUsButton">Join Us</button>
+        <form action="ContactInfo.php" method="post" id="ContactId">
             <table id="contactTable">
+                <tr>
+                    <td>
+                        <label for="Firstname" id="name">Firstname</label>
+                    </td>
+                    <td>
+                        <input type="text" name="Firstnames" id="fname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Lastname" id="Lname">Lastname</label>
+                    </td>
+                    <td>
+                        <input type="text" name="Lastnames" id="lname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="SchoolId" id="SId">School Number</label>
+                    </td>
+                    <td>
+                        <input type="text" name="SchoolIds" id="sıd" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Email" id="Mail">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" name="Emails" id="mail" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Comment" id="Comments">Comment</label>
+                    </td>
+                    <td>
+                        <textarea name="comments" id="comments" cols="30" rows="10" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" id="sendButton">Send</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <form action="MemberInfo.php" method="post" id="MemberJoin">
+            <table id="MemberTable">
                 <tr>
                     <td>
                         <label for="Firstname" id="name">Firstname</label>
