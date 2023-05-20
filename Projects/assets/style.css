@@ -172,12 +172,60 @@ form{
     margin: 2%;
 }
 
+.content-buttons{
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#CommentButton{
+    background-color: coral;
+    margin: 5%;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    border-radius: 4%;
+    border: none;;
+
+}
+#CommentButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#JoinUsButton{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    border-radius: 4%;
+}
+#JoinUsButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 #contactTable{
     margin: 2%;
     margin: auto;
     justify-content: center;
     background-color: blue;
     width: 50%;
+}
+#memberTable{
+
+    margin: 2%;
+    margin: auto;
+    justify-content: center;
+    background-color: blue;
+    width: 50%;
+
 }
 
 form table tr td{
