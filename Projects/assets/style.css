@@ -78,7 +78,7 @@ Lesson : CENG311
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
 
 }
 /*To locate picture left and right*/
@@ -178,6 +178,20 @@ form{
     justify-content: center;
     align-items: center;
 
+}
+
+/*contact button*/
+form table tr td button{
+    width: 25%;
+    border-radius: 10%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background-color: coral;
+    float: right;
+}
+
+form table tr td button:hover{
+    background-color:chocolate;
 }
 
 #CommentButton{
@@ -301,22 +315,8 @@ form table tr td textarea:valid{
 
 
 
-/*contact button*/
-form table tr td button{
-    width: 25%;
-    border-radius: 10%;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-    background-color: coral;
-    float: right;
-}
 
-form table tr td button:hover{
-    background-color:chocolate;
-}
-
-
-/*This part for Activities page*/
+/*This part for Activities and Members pages*/
 .content table{
     width: 100%;
 	border-collapse: collapse;
@@ -344,7 +344,6 @@ form table tr td button:hover{
     padding: 0 8px;
   }
   
-  /* Display the columns below each other instead of side by side on small screens */
   @media screen and (max-width: 650px) {
     .column {
       width: 100%;
@@ -352,12 +351,10 @@ form table tr td button:hover{
     }
   }
   
-  /* Add some shadows to create a card effect */
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
   
-  /* Some left and right padding inside the container */
   .container {
     padding: 0 16px;
   }
