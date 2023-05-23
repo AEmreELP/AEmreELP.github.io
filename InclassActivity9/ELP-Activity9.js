@@ -7,23 +7,22 @@ $(document).ready(function () {
 
 	});
 
-
-
-
-
 	// set up event handlers for links    
 	$("#image_list a").click(function (evt) {
 		
-		$("#image").fadeOut();
-		$("#caption").fadeOut();
-
+		//When I click image in the list I fade out picture and caption
+		//then I fade ın new picture and caption
 		var imageURL = $(this).attr("href");
-		$("#image").attr("src", imageURL).fadeIn();
-
+		$('#image').fadeOut(1000,function(){
+			$("#image").attr("src", imageURL).fadeIn(1000);
+		
+		});
+		
 		var caption = $(this).attr("title");
-		$("#caption").text(caption).fadeIn();
+		$('#caption').fadeOut(1000,function(){
+			$("#caption").text(caption).fadeIn(1000);
 
-
+		})
 
 		// cancel the default action of the link
 		evt.preventDefault();
