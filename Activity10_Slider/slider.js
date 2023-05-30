@@ -8,7 +8,8 @@ $(document).ready(function () {
 		moveSlides: 1,
 		pager: true,
 		pagerType: "short",
-		touchEnabled: false
+		touchEnabled: false,
+		captions: true,
 	});
 
 });
