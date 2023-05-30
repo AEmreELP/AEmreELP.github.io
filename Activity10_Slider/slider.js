@@ -7,6 +7,7 @@ $(document).ready(function() {
 			  speed: 300,
 			  moveSlides: 1,
 			  pager: true,
-			  pagerType: "short"
+			  pagerType: "short",
+			  touchEnabled: false
 			});
     	});
