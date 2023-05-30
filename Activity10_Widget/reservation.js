@@ -7,7 +7,7 @@ $(document).ready(function () {
 	$("#arrival_date").datepicker({
 		maxDate: "+90d",
 		minDate: "+0d",
-		onselect: function (date) { }
+		dateFormat: "yy-mm-dd",
 	});
 
 	$("#policies").click(function(){
