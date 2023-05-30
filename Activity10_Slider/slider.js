@@ -1,5 +1,4 @@
 $(document).ready(function () {
-	require(['jquery', 'jquery/ui', 'NameSpace_Module/web/js/your_module'], function ($, bxSlider) {
 		$("#slider").bxSlider({
 			auto: true,
 			slideWidth: 250,
@@ -11,7 +10,7 @@ $(document).ready(function () {
 			pagerType: "short",
 			touchEnabled: false
 		});
-	})
+	
 });
 
 
