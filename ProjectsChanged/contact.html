@@ -9,8 +9,13 @@
     <!--This 2 column is show site title and icon-->
     <title>AYBU Diving Club</title>
     <link rel="icon" href="assets/images/scuba-diving-international-logo.png">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="jQuery.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="Project.js"></script>
 
 </head>
+
 <body>
 
     <div class="header">
@@ -32,25 +37,156 @@
     </div>
 
     <div class="content">
-        <form action=""></form>
-        <p>Form will add in this page</p>
+        <div class="content-buttons">
+            <button id="CommentButton">Comment</button>&nbsp;&nbsp;&nbsp;
+            <button id="JoinUsButton">Join Us</button>
+
+        </div>
+
+        <form action="ContactInfo.php" method="post" id="ContactId">
+            <table id="contactTable">
+                <tr>
+                    <td>
+                        <label for="Firstname" id="name">Firstname</label>
+                    </td>
+                    <td>
+                        <input type="text" name="Firstnames" id="fname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Lastname" id="Lname">Lastname</label>
+                    </td>
+                    <td>
+                        <input type="text" name="Lastnames" id="lname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="SchoolId" id="SId">School Number</label>
+                    </td>
+                    <td>
+                        <input type="text" name="SchoolIds" id="sıd" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Email" id="Mail">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" name="Emails" id="mail" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Comment" id="Comments">Comment</label>
+                    </td>
+                    <td>
+                        <textarea name="comments" id="comments" cols="30" rows="10" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" id="sendButton">Send</button>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+        </form>
+        <form action="MemberInfo.php" method="post" id="MemberJoin">
+            <table id="memberTable">
+                <tr>
+                    <td>
+                        <label for="Firstname" id="name">Firstname</label>
+                    </td>
+                    <td>
+                        <input type="text" name="Firstnames" id="fname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Lastname" id="Lname">Lastname</label>
+                    </td>
+                    <td>
+                        <input type="text" name="Lastnames" id="lname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Bdate" id="Bdate">Birthday</label>
+                    </td>
+                    <td>
+                        <input type="text" name="Bdate" id="birthday" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="University" id="University">University</label>
+                    </td>
+                    <td>
+                        <input type="text" name="University" id="Uni" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Faculty" id="Faculty">Faculty</label>
+                    </td>
+                    <td>
+                        <input type="text" name="Faculty" id="faculty" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Department" id="Department">Department</label>
+                    </td>
+                    <td>
+                        <input type="text" name="Department" id="department" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="StudentClass" id="StudentClass">Class</label>
+                    </td>
+                    <td>
+                        <input type="text" name="StuClass" id="StuClass" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Email" id="Mail">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" name="Emails" id="mail" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" id="sendButton">Send</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <br>
     </div>
 
     <div class="footer">
-            <ul class="social">
-                <li><a target="_blank" href="/"><img class="footer-images" src="assets/images/instagram.png"
-                            alt="Instagram"></a></li>
-                <li><a target="_blank" href="/"><img class="footer-images"
-                            src="assets/images/twitter.png" alt="Twitter"></a></li>
-                <li><a target="_blank" href="/"><img class="footer-images" src="assets/images/whatsapp.png" alt="WhatsApp"></a></li>
-            </ul>
-            <ul class="footnav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="activities.html">Activities</a></li>
-                <li><a href="member.html">Members</a></li>
-                <li><a href="routes.html">Routes</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <ul class="social">
+            <li><a target="_blank" href="/"><img class="footer-images" src="assets/images/instagram.png"
+                        alt="Instagram"></a></li>
+            <li><a target="_blank" href="/"><img class="footer-images" src="assets/images/twitter.png"
+                        alt="Twitter"></a></li>
+            <li><a target="_blank" href="/"><img class="footer-images" src="assets/images/whatsapp.png"
+                        alt="WhatsApp"></a></li>
+        </ul>
+        <ul class="footnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="member.html">Members</a></li>
+            <li><a href="routes.html">Routes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </div>
     <div class="footerCopyright">
         <p>Copyright &copy; All Right Reserved From AEE</p>
