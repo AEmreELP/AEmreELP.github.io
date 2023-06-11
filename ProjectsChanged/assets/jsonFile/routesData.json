@@ -16,15 +16,15 @@
     {
         "from": "Ankara",
         "to": "Antalya-Kemer",
-        "destInfo": "shipwreck diving",
+        "destInfo": "Night Diving",
         "map": "assets/images/paris2.png",
-        "photo": "assets/images/Shipwreck.jpg"
+        "photo": "assets/images/NightDiving.jpg"
     },
     {
         "from": "Ankara",
         "to": "Muğla-Bodrum",
-        "destInfo": "Cave diving",
+        "destInfo": "Coral diving",
         "map": "assets/images/AnkaraToBodrum.png",
-        "photo": "assets/images/DelikliCaveScubadiving.jpg"
+        "photo": "assets/images/Reefdiving.jpg"
     }
 ]

@@ -9,6 +9,7 @@ Lesson : CENG311
     padding: 0;
     box-sizing: border-box;
 }
+
 /*Home Page general template*/
 #title {
     text-align: center;
@@ -60,6 +61,7 @@ Lesson : CENG311
     transition: .5s;
     padding: 10px;
     border-radius: 30px;
+    font-size: 120%;
 
 }
 
@@ -70,7 +72,7 @@ Lesson : CENG311
 /*Main Part*/
 
 .content {
-    background: linear-gradient(#ffffff,#008ff8de);
+    background: linear-gradient(#ffffff, #008ff8de);
 }
 
 /*Main Image*/
@@ -81,6 +83,7 @@ Lesson : CENG311
     width: 100%;
 
 }
+
 /*To locate picture left and right*/
 .content h2 img {
     width: 35%;
@@ -104,7 +107,7 @@ Lesson : CENG311
     font-size: larger;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif, Times, serif;
-    
+
 }
 
 /*To see contact information for pages*/
@@ -115,16 +118,18 @@ Lesson : CENG311
     text-align: center;
     text-transform: uppercase;
 }
-.footer li{
+
+.footer li {
     list-style: none;
 }
 
-.social{
+.social {
     width: 100%;
     height: 10%;
     background-color: rgb(1, 1, 75);
     display: block;
 }
+
 .social a {
     width: 33%;
     padding: 1%;
@@ -132,22 +137,25 @@ Lesson : CENG311
     float: left;
 
 }
-.social a :hover{
+
+.social a :hover {
     background-color: rgb(255, 0, 0);
 
 }
-.social a img{
+
+.social a img {
     width: 15%;
     border-radius: 30%;
 
 }
-.footnav{
+
+.footnav {
     background-color: rgb(1, 1, 150);
 
 
 }
 
-.footnav li{
+.footnav li {
     width: 20%;
     float: left;
     vertical-align: top;
@@ -157,7 +165,7 @@ Lesson : CENG311
 }
 
 
-.footerCopyright{
+.footerCopyright {
     text-size-adjust: 20px;
     text-align: center;
     margin: 2%;
@@ -165,14 +173,15 @@ Lesson : CENG311
     padding-top: 15%;
     background-color: rgb(1, 1, 80);
 }
+
 /*
   This part  for contact page
 */
-form{
+form {
     margin: 2%;
 }
 
-.content-buttons{
+.content-buttons {
     margin: 2%;
     display: flex;
     justify-content: center;
@@ -181,7 +190,7 @@ form{
 }
 
 /*contact button*/
-form table tr td button{
+form table tr td button {
     width: 25%;
     border-radius: 10%;
     font-family: 'Times New Roman', Times, serif;
@@ -190,11 +199,11 @@ form table tr td button{
     float: right;
 }
 
-form table tr td button:hover{
-    background-color:chocolate;
+form table tr td button:hover {
+    background-color: chocolate;
 }
 
-#CommentButton{
+#CommentButton {
     background-color: coral;
     margin: 5%;
     padding: 15px 32px;
@@ -203,15 +212,18 @@ form table tr td button:hover{
     display: inline-block;
     font-size: 32px;
     border-radius: 4%;
-    border: none;;
+    border: none;
+    ;
 
 }
+
 #CommentButton:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-#JoinUsButton{
-    background-color: #4CAF50; /* Green */
+#JoinUsButton {
+    background-color: #4CAF50;
+    /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -221,18 +233,20 @@ form table tr td button:hover{
     font-size: 32px;
     border-radius: 4%;
 }
+
 #JoinUsButton:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-#contactTable{
+#contactTable {
     margin: 2%;
     margin: auto;
     justify-content: center;
     background-color: blue;
     width: 50%;
 }
-#memberTable{
+
+#memberTable {
 
     margin: 2%;
     margin: auto;
@@ -242,11 +256,11 @@ form table tr td button:hover{
 
 }
 
-form table tr td{
+form table tr td {
     border: none;
 }
 
-form table tr td label{
+form table tr td label {
     font-size: large;
     width: 20%;
     vertical-align: top;
@@ -255,7 +269,7 @@ form table tr td label{
     box-sizing: border-box;
 }
 
-form table tr td input[type="text"]{
+form table tr td input[type="text"] {
     width: 100%;
     align-items: center;
     margin: 2%;
@@ -265,12 +279,13 @@ form table tr td input[type="text"]{
     display: inline-block;
     background-color: turquoise;
 }
-form table tr td input[type="text"]:focus{
-    background:blue;
+
+form table tr td input[type="text"]:focus {
+    background: blue;
     transition: background 1s linear 0s;
 }
 
-form table tr td input[type="email"]{
+form table tr td input[type="email"] {
     width: 100%;
     align-items: center;
     margin: 2%;
@@ -280,60 +295,61 @@ form table tr td input[type="email"]{
     display: inline-block;
     background-color: turquoise;
 }
-form table tr td input[type="email"]:focus{
-    background:blue;
+
+form table tr td input[type="email"]:focus {
+    background: blue;
     transition: background 1s linear 0s;
 }
 
 
-form table tr td textarea{
+form table tr td textarea {
     background-color: turquoise;
     width: 101.5%;
     border-radius: 3%;
 }
 
-form table tr td textarea:focus{
+form table tr td textarea:focus {
     background: blue 5px;
     transition: background 1s linear 0s;
 }
 
-form table tr td input:invalid{
-    outline:solid red 3px;
+form table tr td input:invalid {
+    outline: solid red 3px;
 }
 
-form table tr td input:valid{
-    outline:solid green 3px;
+form table tr td input:valid {
+    outline: solid green 3px;
 }
 
-form table tr td textarea:invalid{
-    outline:solid red 3px;
+form table tr td textarea:invalid {
+    outline: solid red 3px;
 }
 
-form table tr td textarea:valid{
-    outline:solid green 3px;
+form table tr td textarea:valid {
+    outline: solid green 3px;
 }
 
 
 
 
 /*This part for Activities and Members pages*/
-.content table{
+.content table {
     width: 100%;
-	border-collapse: collapse;
-	border: 1px solid black;
-	margin: 20px;
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: 20px;
 
 }
 
-.content th, td 
-{
-	border: 1px solid black;
-	padding: .2em 1em .2em .5em;
-	text-align: center;
-	vertical-align: middle;
+.content th,
+td {
+    border: 1px solid black;
+    padding: .2em 1em .2em .5em;
+    text-align: center;
+    vertical-align: middle;
 }
 
-.content img{
+.content img {
     width: 160px;
 }
 
@@ -342,35 +358,36 @@ form table tr td textarea:valid{
     width: 33.3%;
     margin-bottom: 16px;
     padding: 0 8px;
-  }
-  
-  @media screen and (max-width: 650px) {
+}
+
+@media screen and (max-width: 650px) {
     .column {
-      width: 100%;
-      display: block;
+        width: 100%;
+        display: block;
     }
-  }
-  
-  .card {
+}
+
+.card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-  
-  .container {
+}
+
+.container {
     padding: 0 16px;
-  }
-  
-  /* Clear floats */
-  .container::after, .row::after {
+}
+
+/* Clear floats */
+.container::after,
+.row::after {
     content: "";
     clear: both;
     display: table;
-  }
-  
-  .title {
+}
+
+.title {
     color: grey;
-  }
-  
-  .button {
+}
+
+.button {
     border: none;
     outline: 0;
     display: inline-block;
@@ -380,15 +397,27 @@ form table tr td textarea:valid{
     text-align: center;
     cursor: pointer;
     width: 100%;
-  }
-  
-  .button:hover {
+}
+
+.button:hover {
     background-color: #555;
-  }
+}
 
-  /*This part for routes page*/
+/*This part for routes page*/
 
-  .maxim-box{
+.maxim-box {
     text-align: center;
-    background: linear-gradient(#008ff8de,#ffffff);
+    background: linear-gradient(#008ff8de, #ffffff);
+}
+
+#myTable td {
+    border: none;
+    font-size: 25px;
+
+}
+
+#myTable td img {
+    margin: 0%;
+    width: 100%;
+
 }

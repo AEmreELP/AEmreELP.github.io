@@ -77,7 +77,7 @@ $(document).ready(function () {
 
 //AJAX request from a data file
 $.ajax({
-    url: 'routesData.json',
+    url: 'assets/jsonFile/routesData.json',
     dataType: 'json',
     success: function(data) {
         for (var i=0; i<data.length; i++) {
