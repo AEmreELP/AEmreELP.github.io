@@ -1,31 +1,32 @@
-[
-    {
-        "from": "Ankara",
-        "to": "Antalya-Kemer",
-        "destInfo": "shipwreck diving",
-        "map": "assets/images/paris2.png",
-        "activity-photo": "assets/images/Shipwreck.jpg"
-    },
-    {
-        "from": "Ankara",
-        "to": "Muğla-Bodrum",
-        "destInfo": "Cave diving",
-        "map": "assets/images/AnkaraToBodrum.png",
-        "activity-photo": "assets/images/DelikliCaveScubadiving.jpg"
-    },
-    {
-        "from": "Ankara",
-        "to": "Antalya-Kemer",
-        "destInfo": "shipwreck diving",
-        "map": "assets/images/paris2.png",
-        "activity-photo": "assets/images/Shipwreck.jpg"
-    },
-    {
-        "from": "Ankara",
-        "to": "Muğla-Bodrum",
-        "destInfo": "Cave diving",
-        "map": "assets/images/AnkaraToBodrum.png",
-        "activity-photo": "assets/images/DelikliCaveScubadiving.jpg"
-    }
-    
-]
+{
+    "routes": [
+        {
+            "from": "Ankara",
+            "to": "Antalya-Kemer",
+            "destInfo": "shipwreck diving",
+            "map": "assets/images/paris2.png",
+            "activity-photo": "assets/images/Shipwreck.jpg"
+        },
+        {
+            "from": "Ankara",
+            "to": "Muğla-Bodrum",
+            "destInfo": "Cave diving",
+            "map": "assets/images/AnkaraToBodrum.png",
+            "activity-photo": "assets/images/DelikliCaveScubadiving.jpg"
+        },
+        {
+            "from": "Ankara",
+            "to": "Antalya-Kemer",
+            "destInfo": "shipwreck diving",
+            "map": "assets/images/paris2.png",
+            "activity-photo": "assets/images/Shipwreck.jpg"
+        },
+        {
+            "from": "Ankara",
+            "to": "Muğla-Bodrum",
+            "destInfo": "Cave diving",
+            "map": "assets/images/AnkaraToBodrum.png",
+            "activity-photo": "assets/images/DelikliCaveScubadiving.jpg"
+        }
+    ]
+}

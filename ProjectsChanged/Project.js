@@ -73,3 +73,17 @@ $(document).ready(function () {
     })
 
 })//ready end
+
+$.ajax({
+    url: 'routesData.json',
+    dataType: 'json',
+    success: function(data) {
+        for (var i=0; i<data.length; i++) {
+            var row = $('<tr><td>' + data[i].from + '</td> <td>' + data[i].to + '</td><td>' + data[i].destInfo + '</td> <td><img src="' + data[i].map + '"</td><td><img src="' + data[i].photo + '"</td></tr>');
+            $('#myTable').append(row);
+        }
+    },
+    error: function(jqXHR, textStatus, errorThrown){
+        alert('Error: ' + textStatus + ' - ' + errorThrown);
+    }
+});
