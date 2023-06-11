@@ -87,3 +87,20 @@ $.ajax({
         alert('Error: ' + textStatus + ' - ' + errorThrown);
     }
 });
+
+
+function parseQuote(response) {
+    var quoteText = response.quoteText;
+    var quoteAuthor = response.quoteAuthor || 'Unknown';
+  
+    document.getElementById('quoteText').textContent = quoteText;
+    document.getElementById('quoteAuthor').textContent = "- " + quoteAuthor;
+  }
+  
+  function fetchQuote() {
+    var script = document.createElement('script');
+    script.src = 'https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=parseQuote';
+    document.head.appendChild(script);
+  }
+
+  

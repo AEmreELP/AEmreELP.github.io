@@ -13,6 +13,7 @@
     <script src="jquery-ui.js"></script>
     <script src="Project.js"></script>
 
+    
 </head>
 <body>
 
@@ -48,6 +49,16 @@
 
     </div>
 
+
+    <div class="quote-container">
+        <p class="quote" id="quoteText"></p>
+        <p class="author" id="quoteAuthor"></p>
+      </div>
+      <script src="https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=parseQuote"></script>
+
+
+
+    
     <div class="footer">
             <ul class="social">
                 <li><a target="_blank" href="/"><img class="footer-images" src="assets/images/instagram.png"
