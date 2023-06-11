@@ -385,3 +385,10 @@ form table tr td textarea:valid{
   .button:hover {
     background-color: #555;
   }
+
+  /*This part for routes page*/
+
+  .maxim-box{
+    text-align: center;
+    background: linear-gradient(#008ff8de,#ffffff);
+}

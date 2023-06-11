@@ -74,6 +74,8 @@ $(document).ready(function () {
 
 })//ready end
 
+
+//AJAX request from a data file
 $.ajax({
     url: 'routesData.json',
     dataType: 'json',
@@ -88,13 +90,13 @@ $.ajax({
     }
 });
 
-
+//AJAX request from an external website
 function parseQuote(response) {
-    var quoteText = response.quoteText;
-    var quoteAuthor = response.quoteAuthor || 'Unknown';
+    var maximText = response.quoteText;
+    var maximistText = response.quoteAuthor || 'Anonymus';
   
-    document.getElementById('quoteText').textContent = quoteText;
-    document.getElementById('quoteAuthor').textContent = "- " + quoteAuthor;
+    document.getElementById('maximText').textContent = maximText;
+    document.getElementById('maximistText').textContent = "- " + maximistText;
   }
   
   function fetchQuote() {

@@ -1,0 +1,16 @@
+In this project I used:
+
+jQuery-UI widget:datapicker
+jQuery-UI widget:autocomplete
+jQuery effecets:fadeIn and fadeOut
+jQuery plugins:$.fn
+jQuery plugins:each()
+jQuery plugins:.css()
+
+In first AJAX request ı create my json file and then ı get the datas from json file and implement in table (routes.html page)
+In seconde AJAX request I get the information from forismatic.com site and displayed in route pages bottom.
+
+I tried to write clean and understandable codes as much as possible.
+Generally, I tried to use that I applied in inclass activites.
+For layout and sytling ,I generally tried to choose themes related to water diving(such as I used coral colar or blue). 
+If I can create an admin panel, I think universities will have a website for diving and underwater sports.
